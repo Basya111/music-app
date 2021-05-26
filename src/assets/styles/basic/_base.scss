@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    // background: rgb(0,0,0);
+    // background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(189,22,85,1) 38%, rgba(255,51,128,1) 51%, rgba(189,17,90,1) 65%, rgba(0,0,0,1) 89%);
+    background-image: url('https://res.cloudinary.com/basimgs/image/upload/v1611063807/pexels-pixabay-33545_zzzi4o.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.App{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    // font-family: caveat, serif;
+    margin: 0 0 0.4em;
+    line-height: 0.9;
+}
+
+p {
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.cta-btn {background-image: linear-gradient(to right, #ED4264 0%, #ffcbb7 51%, #ED4264 100%)}
+.cta-btn {
+    padding: 8px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 7px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    outline: none;
+ }
+
+.cta-btn:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+

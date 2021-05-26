@@ -1,0 +1,44 @@
+.song-preview{
+
+    align-items: center;
+    padding: 0 5px 5px 0;
+    width: 510px;
+    transition: background-color 0.3s;
+    cursor: grab;
+
+    &:hover{
+        background-color: #1b1b1b8c;
+        border-radius: 3px;
+        transition: background-color 0.4s;
+    }
+
+
+    .song-img{
+        width: 45px;
+        object-fit: contain;
+    }
+
+    .play-btn{
+        width: 26px;
+        object-fit: contain;
+        margin-right: 3px;
+        filter: invert(0.9);
+        cursor: pointer;
+    }
+
+    p{
+        margin: 0 7px;
+    }
+
+    .delete-btn{
+        background-color: unset;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        img{
+            width: 18px;
+            filter: invert(1);
+        }
+    }
+}

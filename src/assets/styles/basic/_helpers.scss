@@ -1,0 +1,29 @@
+.flex {
+
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.space-between{
+        justify-content: space-between;
+    }
+    &.align-baseline{
+        align-items: baseline;
+    }
+    &.align-end{
+        align-items: flex-end;
+    }
+    &.column-reverse{
+        flex-direction: column-reverse;
+    }
+}

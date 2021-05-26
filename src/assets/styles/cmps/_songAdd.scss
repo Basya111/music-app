@@ -1,0 +1,55 @@
+.add-song-container {
+
+    width: 410px;
+
+    .add-btn {
+        background-image: linear-gradient(to right, #ff4167 0%, #330014 51%, #ff3b62 100%);
+    }
+    .add-btn {
+        padding: 11px 12px 8px;
+        text-align: center;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        box-shadow: 0 0 7px #eee;
+        border-radius: 50%;
+        display: block;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-right: 10px;
+
+        &.close{
+                transform: rotate(45deg);
+        }
+
+        img {
+            width: 17px;
+            filter: invert(1);
+        }
+    }
+
+    .add-btn:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .unshown-input {
+        width: 0px;
+        border: none;
+        outline: none;
+        padding: 0;
+        border-radius: 100px 100px;
+        transition: width 1s;
+    }
+
+    .show-input {
+        width: 280px;
+        transition: width 1s;
+        outline: none;
+        border-radius: 100px 100px;
+        padding: 0 25px;
+        border: none;
+    }
+}

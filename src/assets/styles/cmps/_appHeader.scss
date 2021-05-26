@@ -1,0 +1,33 @@
+.app-header {
+    padding: 15px 20px 5px;
+    // background: rgb(18,0,10);
+    // background: linear-gradient(90deg, rgba(18,0,10,1) 6%, rgba(232,32,111,1) 38%, rgba(255,54,116,1) 49%, rgba(232,32,111,1) 60%, rgba(18,0,10,1) 94%);
+
+    // background: rgb(255,50,127);
+    // background: radial-gradient(circle, rgba(255,50,127,1) 0%, rgba(212,34,104,1) 17%, rgba(5,0,2,1) 64%);
+    nav {
+        width: 250px;
+
+        .nav-list {
+            justify-content: space-between;
+            li {
+                margin-left: 10px;
+                a {
+                    color: white;
+                    font-weight: 500;
+                    transition: text-shadow 0.5s;
+
+                    &:hover {
+                        text-shadow: 0px -3px 4px white;
+                        transition: text-shadow 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+.profile-icon {
+    width: 18px;
+    filter: invert(1);
+    cursor: pointer;
+}

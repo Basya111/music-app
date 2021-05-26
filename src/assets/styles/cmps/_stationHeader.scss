@@ -1,0 +1,61 @@
+.station-header {
+    margin-bottom: 20px;
+
+    textarea {
+        width: 300px;
+        height: 55px;
+        resize: none;
+    }
+
+    .station-img {
+        width: 190px;
+        height: 160px;
+        object-fit: cover;
+        margin-right: 15px;
+        border-radius: 3px;
+    }
+
+    .tags-container {
+        li {
+            margin-right: 5px;
+            background-color: #191919b8;
+            border-radius: 3px;
+            padding: 0 4px 2px;
+        }
+    }
+
+    .featur-header {
+        .like-btn {
+            width: 40px;
+            border: none;
+            outline: none;
+            background-color: unset;
+            filter: invert(1);
+            cursor: pointer;
+        }
+
+        .clipboard-btn {
+            width: 30px;
+            height: 30px;
+            border: none;
+            outline: none;
+            background-color: unset;
+            filter: invert(1);
+            cursor: pointer;
+            transition: 0.4s;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: #ffffff42;
+                border-radius: 50%;
+                transition: 0.4s;
+            }
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            font-size: 0.75rem;
+        }
+    }
+}

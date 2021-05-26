@@ -1,0 +1,35 @@
+.search-list{
+  
+    height: 206px;
+    // width: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin  : 5px 0 0 53px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .search-priview{
+
+        margin-bottom: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        img{
+            width: 45px;
+            object-fit: contain;
+            margin-right: 5px;
+            align-items: center;
+        }
+
+        &:hover{
+            background-color: #1b1b1b8c;
+            border-radius: 3px;
+            transition: background-color 0.4s;
+        }
+
+
+    }
+}

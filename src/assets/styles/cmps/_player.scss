@@ -1,0 +1,110 @@
+.audio-player {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    align-items: center;
+    margin-top: 11px;
+
+    #player {
+        display: none;
+    }
+
+    .player-song-prev {
+        align-items: center;
+
+        img {
+            width: 60px;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+    }
+
+    .song-handle {
+        justify-content: space-between;
+
+        .progress {
+            width: 350px;
+            align-items: center;
+            margin-right: 8px;
+
+            .song-progress {
+                width: 100%;
+                margin: 0 7px;
+            }
+        }
+
+        .player-control {
+            .play-btn {
+                width: 28px;
+                height: 28px;
+                border: none;
+                outline: none;
+                border-radius: 47%;
+                background-color: #ffffffbd;
+                padding: 7px;
+                margin: 0 4px;
+                cursor: pointer;
+                transition: transform 0.4s;
+
+                &:hover{
+                    transform: scale(1.07);
+                    background-color: #ffffff9f;
+                    transition: transform background-color 0.4s;
+                }
+            }
+
+            .next-btn {
+                // width: 38px;
+                // height: 38px;
+                // border: none;
+                // outline: none;
+                // border-radius: 50%;
+                // background-color: unset;
+                // filter: invert(1);
+                width: 26px;
+                height: 26px;
+                border: none;
+                outline: none;
+                border-radius: 47%;
+                background-color: #ffffffbd;
+                padding: 7px;
+                cursor: pointer;
+                transition: transform 0.4s;
+
+                &:hover{
+                    transform: scale(1.07);
+                    background-color: #ffffff9f;
+                    transition: transform background-color 0.4s;
+                }
+            }
+        }
+
+        .volume-prop {
+            .volume {
+                transform: rotate(270deg);
+                height: -7px;
+                width: 52px;
+                height: 5px;
+            }
+
+            .mute-btn {
+                width: 28px;
+                height: 28px;
+                border: none;
+                outline: none;
+                border-radius: 47%;
+                background-color: #ffffffbd;
+                padding: 7px;
+                margin: 0 -3px;
+                cursor: pointer;
+                transition: transform 0.4s;
+
+                &:hover{
+                    transform: scale(1.07);
+                    background-color: #ffffff9f;
+                    transition: transform background-color 0.4s;
+                }
+            }
+        }
+    }
+}

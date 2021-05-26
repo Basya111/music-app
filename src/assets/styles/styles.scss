@@ -1,0 +1,21 @@
+@import "./basic/base.scss";
+@import "./basic/helpers.scss";
+@import "./setup/typografy.scss";
+
+
+//cmps
+@import "./cmps/songPreview.scss";
+@import "./cmps/stationHeader.scss";
+@import "./cmps/searchList.scss";
+@import "./cmps/songAdd.scss";
+@import "./cmps/appHeader.scss";
+@import "./cmps/stationAdd.scss";
+@import "./cmps/player.scss";
+@import "./cmps/chat.scss";
+
+//pages
+@import "./pages/stationsPage.scss";
+@import "./pages/stationPage.scss";
+@import "./pages/userProfile.scss";
+
+

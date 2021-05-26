@@ -1,0 +1,120 @@
+.chat-btn {
+    border: none;
+    outline: none;
+    background-color: unset;
+    width: 50px;
+    position: absolute;
+    bottom: 18%;
+    right: 1%;
+    cursor: pointer;
+    transition: transform 0.4s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform 0.4s;
+    }
+
+    img {
+        filter: invert(1);
+        width: 100%;
+    }
+}
+
+.chat-container {
+    width: 290px;
+    height: 340px;
+    background-color: #13050bb0;
+    box-shadow: 0px 2px 3px 1px #505050;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 18%;
+    right: 1%;
+    padding: 6px 8px;
+
+    .close-btn {
+        position: absolute;
+        border: none;
+        outline: none;
+        font-size: 1.125rem;
+        border-radius: 50%;
+        padding: 2px 8px 3px;
+        cursor: pointer;
+        background-color: #6e6e6e7d;
+        color: white;
+        top: 1%;
+        right: 2%;
+
+        &:hover{
+            background-color: #6e6e6ea4;
+        }
+    }
+
+    .msg-container {
+        margin-top: 10px;
+
+        .msgs {
+            height: 290px;
+            overflow: hidden;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            &::-webkit-scrollbar {
+                width: 7px;
+                border-radius: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: unset;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #cab5b9c0(255, 112, 207, 0.877);
+                border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #ED4264(255, 112, 207);
+            }
+
+            li {
+                padding: 3px 5px;
+                border-radius: 3px;
+                margin-bottom: 2px;
+            }
+            li:nth-child(odd) {
+                background: #530e2ba6;
+            }
+            li:nth-child(even) {
+                background: #15131359;;
+            }
+        }
+    }
+
+    form {
+        .send-btn {
+            width: 30px;
+            outline: none;
+            border: none;
+            background-color: unset;
+            filter: invert(1);
+            padding: 2px 5px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        input {
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            padding: 5px 8px;
+            width: 88%;
+        }
+    }
+}
